@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Confetti from 'react-confetti';
 import { useWindowSize } from "react-use";
+import poukaz from "../public/adam-narozeniny.png";
 
 const word = "snowboard";
 const letters = ["qwertzuiop", "asdfghjkl", "yxcvbnm"];
@@ -100,6 +101,7 @@ function App() {
           <Confetti width={width} height={height} />
           <h2>Gratuluji, uhádl jsi slovo!</h2>
           <p>Tímto získáváš poukaz na snowboardovou školu na Ještědě.</p>
+          <a href={poukaz}>Zobrazit poukaz</a>
         </div>
       ) : ""
       }
